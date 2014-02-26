@@ -95,7 +95,7 @@
 }
 .btn-info:active,
 .btn-info.active {
-  background-color: #2aabd2;
+  background-color: grey;
   border-color: #28a4c9;
 }
 .btn-warning {
