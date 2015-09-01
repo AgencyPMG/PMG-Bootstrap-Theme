@@ -23,6 +23,23 @@ To install a tagged version, use
 }
 ```
 
+Include in your compass project
+```
+add_import_path "bower_components/pmgbootstraptheme/"
+```
+
+```scss
+@import "assets/css/theme";
+@import "bootstrap";
+```
+
+If you would like the compiled version that has bootstrap already included, you
+can use the dist folder
+```html
+<link href="bower_components/pmgbootstraptheme/dist/css/app.css" rel="stylesheet" />
+```
+
+
 ## How to compile
 
 To compile, first run ```bower install```, and then follow the steps below
