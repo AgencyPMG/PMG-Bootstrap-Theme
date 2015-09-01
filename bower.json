@@ -1,0 +1,25 @@
+{
+  "name": "pmgbootstraptheme",
+  "version": "1.0.0",
+  "homepage": "https://github.com/AgencyPMG/PMGBootstrapTheme",
+  "authors": [
+    "Chris Alvares <mail@chrisalvares.com>"
+  ],
+  "description": "PMGs bootstrap theme",
+  "main": "index.js",
+  "keywords": [
+    "PMG",
+    "Theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
