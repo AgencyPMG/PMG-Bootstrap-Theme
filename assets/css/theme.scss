@@ -1,5 +1,5 @@
 $bootstrap-sass-asset-helper: false !default;
-// Flatly 3.3.5
+// Flatly 3.3.5 with Yeti Colors
 // Variables
 // --------------------------------------------------
 
@@ -10,16 +10,16 @@ $bootstrap-sass-asset-helper: false !default;
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              #7b8a8b !default;   // #333
-$gray:                   #95a5a6 !default; // #555
-$gray-light:             #b4bcc2 !default;   // #999
-$gray-lighter:           #ecf0f1 !default; // #eee
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   #6f6f6f !default; // #555
+$gray-light:             lighten($gray-base, 60%) !default;   // #999
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #2C3E50 !default;
-$brand-success:         #18BC9C !default;
-$brand-info:            #3498DB !default;
-$brand-warning:         #F39C12 !default;
-$brand-danger:          #E74C3C !default;
+$brand-primary:         #008cba !default;
+$brand-success:         #43ac6a !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #E99002 !default;
+$brand-danger:          #F04124 !default;
 
 
 //== Scaffolding
@@ -29,10 +29,10 @@ $brand-danger:          #E74C3C !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $brand-primary !default;
+$text-color:            $gray-darker !default;
 
 //** Global textual link color.
-$link-color:            $brand-success !default;
+$link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $link-color !default;
 //** Link hover decoration.
@@ -365,9 +365,9 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-bg:                $brand-primary !default;
-$navbar-default-border:            transparent !default;
+$navbar-default-color:             #fff !default;
+$navbar-default-bg:                $gray-dark !default;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
 $navbar-default-link-color:                #fff !default;
@@ -392,8 +392,8 @@ $navbar-default-toggle-border-color:       darken($navbar-default-bg, 10%) !defa
 //=== Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      #fff !default;
-$navbar-inverse-bg:                         $brand-success !default;
-$navbar-inverse-border:                     transparent !default;
+$navbar-inverse-bg:                         $brand-primary !default;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
 
 // Inverted navbar links
 $navbar-inverse-link-color:                 #fff !default;
