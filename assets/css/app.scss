@@ -6,3 +6,32 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 @import "theme";
 @import "bootstrap";
+
+*:focus {
+    outline: 5px auto lighten($brand-info, 13.5%) !important;
+}
+
+.btn {
+    border-bottom-width: 5px;
+    &:active {
+        border-bottom-width: 0;
+    }
+}
+
+.label {
+    &-primary {
+        color: darken($brand-primary, 20%);
+    }
+    &-success {
+        color: darken($brand-success, 20%);
+    }
+    &-info {
+        color: darken($brand-info, 20%);
+    }
+    &-warning {
+        color: lighten($brand-warning, 46.7%);
+    }
+    &-danger {
+        color: lighten($brand-danger, 46.7%);
+    }
+}
