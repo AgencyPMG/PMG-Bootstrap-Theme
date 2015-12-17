@@ -15,7 +15,7 @@ $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
-$brand-primary:         hsl(270,25%,50%);
+$brand-primary:         #2d3142;
 $brand-success:         hsl(300,25%,50%);
 $brand-info:            hsl(240,25%,50%);
 $brand-warning:         hsl(50,100%,50%);;
@@ -153,15 +153,15 @@ $btn-default-color:              #333;
 $btn-default-bg:                 #fff;
 $btn-default-border:             #ccc;
 
-$btn-primary-color:              darken($brand-primary, 33.5%); //#fff;
+$btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
 $btn-primary-border:             darken($btn-primary-bg, 5%);
 
-$btn-success-color:              darken($brand-success, 33.5%); //#fff;
+$btn-success-color:              #fff;
 $btn-success-bg:                 $brand-success;
 $btn-success-border:             darken($btn-success-bg, 5%);
 
-$btn-info-color:                 darken($brand-info, 33.5%); //#fff;
+$btn-info-color:                 #fff;
 $btn-info-bg:                    $brand-info;
 $btn-info-border:                darken($btn-info-bg, 5%);
 
@@ -870,5 +870,4 @@ $page-header-border-color:    $gray-lighter;
 $dl-horizontal-offset:        $component-offset-horizontal;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter;
-
 
