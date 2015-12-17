@@ -15,11 +15,11 @@ $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
-$brand-primary:         #337ab7;
-$brand-success:         #5cb85c;
-$brand-info:            #5bc0de;
-$brand-warning:         #f0ad4e;
-$brand-danger:          #d9534f;
+$brand-primary:         #2d3142;
+$brand-success:         hsl(300,25%,50%);
+$brand-info:            hsl(240,25%,50%);
+$brand-warning:         hsl(50,100%,50%);;
+$brand-danger:          hsl(10,100%,50%);
 
 
 //== Scaffolding
@@ -107,9 +107,9 @@ $padding-xs-horizontal:     5px;
 $line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5;
 
-$border-radius-base:        4px;
-$border-radius-large:       6px;
-$border-radius-small:       3px;
+$border-radius-base:        0px;
+$border-radius-large:       0px;
+$border-radius-small:       0px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff;
@@ -165,11 +165,11 @@ $btn-info-color:                 #fff;
 $btn-info-bg:                    $brand-info;
 $btn-info-border:                darken($btn-info-bg, 5%);
 
-$btn-warning-color:              #fff;
+$btn-warning-color:              lighten($brand-warning, 46.7%); //#fff;
 $btn-warning-bg:                 $brand-warning;
 $btn-warning-border:             darken($btn-warning-bg, 5%);
 
-$btn-danger-color:               #fff;
+$btn-danger-color:               lighten($brand-danger, 46.7%); //#fff;
 $btn-danger-bg:                  $brand-danger;
 $btn-danger-border:              darken($btn-danger-bg, 5%);
 
@@ -444,8 +444,8 @@ $nav-tabs-justified-active-link-border-color:     $body-bg;
 
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base;
-$nav-pills-active-link-hover-bg:            $component-active-bg;
-$nav-pills-active-link-hover-color:         $component-active-color;
+$nav-pills-active-link-hover-bg:            darken($brand-primary, 20%); //$component-active-bg;
+$nav-pills-active-link-hover-color:         darken($brand-primary, 33.5%); //$component-active-color;
 
 
 //== Pagination
@@ -501,20 +501,20 @@ $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5));
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #3c763d;
-$state-success-bg:               #dff0d8;
+$state-success-text:             darken($brand-success, 20%); //#3c763d;
+$state-success-bg:               lighten($brand-success, 20%); //#dff0d8;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%);
 
-$state-info-text:                #31708f;
-$state-info-bg:                  #d9edf7;
+$state-info-text:                darken($brand-info, 20%); //#31708f;
+$state-info-bg:                  lighten($brand-info, 20%); //#d9edf7;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%);
 
-$state-warning-text:             #8a6d3b;
-$state-warning-bg:               #fcf8e3;
+$state-warning-text:             darken($brand-warning, 20%); //#8a6d3b;
+$state-warning-bg:               lighten($brand-warning, 20%); //#fcf8e3;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
 
-$state-danger-text:              #a94442;
-$state-danger-bg:                #f2dede;
+$state-danger-text:              darken($brand-danger, 20%); //#a94442;
+$state-danger-bg:                lighten($brand-danger, 20%); //#f2dede;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
 
 
@@ -683,13 +683,13 @@ $list-group-border-radius:      $border-radius-base;
 //** Background color of single list items on hover
 $list-group-hover-bg:           #f5f5f5;
 //** Text color of active list items
-$list-group-active-color:       $component-active-color;
+$list-group-active-color:       darken($brand-primary, 20%); //$component-active-color;
 //** Background color of active list items
 $list-group-active-bg:          $component-active-bg;
 //** Border color of active list elements
 $list-group-active-border:      $list-group-active-bg;
 //** Text color for content within active list items
-$list-group-active-text-color:  lighten($list-group-active-bg, 40%);
+$list-group-active-text-color:  darken($brand-primary, 20%); //lighten($list-group-active-bg, 40%);
 
 //** Text color of disabled list items
 $list-group-disabled-color:      $gray-light;
@@ -721,7 +721,7 @@ $panel-default-text:          $gray-dark;
 $panel-default-border:        #ddd;
 $panel-default-heading-bg:    #f5f5f5;
 
-$panel-primary-text:          #fff;
+$panel-primary-text:          darken($brand-primary, 20%)l; //#fff;
 $panel-primary-border:        $brand-primary;
 $panel-primary-heading-bg:    $brand-primary;
 
@@ -733,11 +733,11 @@ $panel-info-text:             $state-info-text;
 $panel-info-border:           $state-info-border;
 $panel-info-heading-bg:       $state-info-bg;
 
-$panel-warning-text:          $state-warning-text;
+$panel-warning-text:          lighten($brand-warning, 93.5%); //$state-warning-text;
 $panel-warning-border:        $state-warning-border;
 $panel-warning-heading-bg:    $state-warning-bg;
 
-$panel-danger-text:           $state-danger-text;
+$panel-danger-text:           lighten($brand-danger, 93.5%); //$state-danger-text;
 $panel-danger-border:         $state-danger-border;
 $panel-danger-heading-bg:     $state-danger-bg;
 
@@ -773,15 +773,15 @@ $well-border:                 darken($well-bg, 7%);
 //
 //##
 
-$badge-color:                 #fff;
+$badge-color:                 darken($brand-primary, 20%); //#fff;
 //** Linked badge text color on hover
 $badge-link-hover-color:      #fff;
-$badge-bg:                    $gray-light;
+$badge-bg:                    $brand-primary; //$gray-light;
 
 //** Badge text color in active nav link
-$badge-active-color:          $link-color;
+$badge-active-color:          darken($brand-primary, 20%); //$link-color;
 //** Badge background color in active nav link
-$badge-active-bg:             #fff;
+$badge-active-bg:             $brand-primary; //#fff;
 
 $badge-font-weight:           bold;
 $badge-line-height:           1;
@@ -870,3 +870,4 @@ $page-header-border-color:    $gray-lighter;
 $dl-horizontal-offset:        $component-offset-horizontal;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter;
+

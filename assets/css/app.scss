@@ -6,3 +6,13 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 @import "theme";
 @import "bootstrap";
+
+*:focus {
+    outline: 5px auto lighten($brand-info, 13.5%) !important;
+}
+
+.btn {
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 4px 16px;
+}
