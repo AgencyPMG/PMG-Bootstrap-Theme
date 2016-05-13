@@ -1,0 +1,21 @@
+.btn {
+    &.btn-default {
+        background-image: linear-gradient(-180deg, #F3F3F3 0%, #C0C0C0 100%);
+    }
+    &.btn-primary {
+        background-image: linear-gradient(-180deg, $brand-primary-light 0%, $brand-primary 100%);
+    }
+    &.btn-success {
+        background-image: linear-gradient(-180deg, $brand-success-light 0%, $brand-success 100%);
+    }
+    &.btn-info {
+        background-image: linear-gradient(-180deg, $brand-info-light 0%, $brand-info 100%);
+    }
+    &.btn-warning {
+        background-image: linear-gradient(-180deg, $brand-warning-light 0%, $brand-warning 100%);
+    }
+    &.btn-danger {
+        background-image: linear-gradient(-180deg, $brand-danger-light 0%, $brand-danger 100%);
+    }
+
+}
