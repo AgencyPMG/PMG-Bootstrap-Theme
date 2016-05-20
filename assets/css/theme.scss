@@ -24,10 +24,10 @@ $brand-success-dark:    darken($brand-success, 20%);
 $brand-info:            #3a8ea7;
 $brand-info-light:      lighten($brand-info, 20%);
 $brand-info-dark:       darken($brand-info, 20%);
-$brand-warning:         #eda031;
+$brand-warning:         #E89B2C;
 $brand-warning-light:   lighten($brand-warning, 20%);
 $brand-warning-dark:    darken($brand-warning, 20%);
-$brand-danger:          #ba2823;
+$brand-danger:          #B2201B;
 $brand-danger-light:    lighten($brand-danger, 20%);
 $brand-danger-dark:     darken($brand-danger, 20%);
 
@@ -519,11 +519,11 @@ $state-info-bg:                  lighten($brand-info-light, 25%);
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%);
 
 $state-warning-text:             $brand-warning;
-$state-warning-bg:               lighten($brand-warning-light, 17%);
+$state-warning-bg:               lighten($brand-warning-light, 19%);
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
 
 $state-danger-text:              $brand-danger;
-$state-danger-bg:                lighten($brand-danger-light, 27%);
+$state-danger-bg:                lighten($brand-danger-light, 29%);
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
 
 //== Tooltips
