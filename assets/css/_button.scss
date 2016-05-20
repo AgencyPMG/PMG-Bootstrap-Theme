@@ -1,6 +1,6 @@
 .btn {
     &.btn-default {
-        background-image: linear-gradient(-180deg, #F3F3F3 0%, #C0C0C0 100%);
+        background-image: linear-gradient(-180deg, $gray-lighter 0%, $gray-light 100%);
     }
     &.btn-primary {
         background-image: linear-gradient(-180deg, $brand-primary-light 0%, $brand-primary 100%);
