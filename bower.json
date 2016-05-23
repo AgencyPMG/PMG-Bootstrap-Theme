@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://github.com/AgencyPMG/PMGBootstrapTheme",
   "authors": [
-    "Chris Alvares <mail@chrisalvares.com>"
+    "PMG 2016 <tech@pmg.com>"
   ],
   "description": "PMGs bootstrap theme",
   "main": "index.js",
