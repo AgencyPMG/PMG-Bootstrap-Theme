@@ -19,18 +19,21 @@ To install a tagged version, use
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "https://github.com/AgencyPMG/PMGBootstrapTheme.git#1.0.0"
+  "pmgbootstraptheme": "https://github.com/AgencyPMG/PMGBootstrapTheme.git#v1.0.0"
 }
 ```
 
 Include in your compass project
 ```
+require 'bootstrap-sass'
 add_import_path "bower_components/pmgbootstraptheme/"
 ```
 
 ```scss
-@import "assets/css/theme";
+@import "assets/css/variables";
+$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
 @import "bootstrap";
+@import "assets/css/button";
 ```
 
 If you would like the compiled version that has bootstrap already included, you
