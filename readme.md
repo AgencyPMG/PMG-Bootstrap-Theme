@@ -5,13 +5,15 @@ This is the offical bootstrap theme for PMG's internal tools.
 This is a seperate style guide from the PMG Website and Branding Guidelines,
 and should not be combined.
 
+Note: You will need to install bootstrap-sass `gem install bootstrap-sass` and you may need to add bootstrap-sass to your gem file `gem 'bootstrap-sass', '~> 3.3.6'`
+
 ## How to install
 
 To install, add the following to your ```bower.json``` file
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "https://github.com/AgencyPMG/PMGBootstrapTheme.git"
+  "pmgbootstraptheme": "git://github.com/AgencyPMG/PMGBootstrapTheme.git"
 }
 ```
 
@@ -19,7 +21,7 @@ To install a tagged version, use
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "https://github.com/AgencyPMG/PMGBootstrapTheme.git#v1.0.0"
+  "pmgbootstraptheme": "git://github.com/AgencyPMG/PMGBootstrapTheme.git#v1.0.0"
 }
 ```
 
@@ -31,7 +33,7 @@ add_import_path "bower_components/pmgbootstraptheme/"
 
 ```scss
 @import "assets/css/variables";
-$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path: "../bootstrap-sass/assets/fonts/bootstrap/"; //This needs to point to the glyphicons fonts
 @import "bootstrap";
 @import "assets/css/button";
 ```
