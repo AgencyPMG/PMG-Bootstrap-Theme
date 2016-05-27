@@ -13,7 +13,7 @@ To install, add the following to your ```bower.json``` file
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.0.0"
+  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git"
 }
 ```
 
@@ -21,7 +21,7 @@ To install a tagged version, use
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.0.0#v1.0.0"
+  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.0.0"
 }
 ```
 
