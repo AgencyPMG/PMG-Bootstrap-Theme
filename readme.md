@@ -5,7 +5,7 @@ This is the offical bootstrap theme for PMG's internal tools.
 This is a seperate style guide from the PMG Website and Branding Guidelines,
 and should not be combined.
 
-Note: You will need to install bootstrap-sass `gem install bootstrap-sass` and you may need to add bootstrap-sass to your gem file `gem 'bootstrap-sass', '~> 3.3.6'`
+Note: You will need to install bootstrap-sass `gem install bootstrap-sass`. You may need to add bootstrap-sass to your server gem file `gem 'bootstrap-sass', '~> 3.3.6'`
 
 ## How to install
 
