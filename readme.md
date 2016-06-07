@@ -60,3 +60,6 @@ compass watch
 compass clean
 compass compile -e production --force
 ```
+
+### Navigation
+Your navigation should following the bootstrap HTML example: http://getbootstrap.com/components/#navbar
