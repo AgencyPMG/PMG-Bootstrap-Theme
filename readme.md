@@ -36,6 +36,7 @@ add_import_path "bower_components/pmgbootstraptheme/"
 $icon-font-path: "../bootstrap-sass/assets/fonts/bootstrap/"; //This needs to point to the glyphicons fonts
 @import "bootstrap";
 @import "assets/css/button";
+@import "assets/css/menu";
 ```
 
 If you would like the compiled version that has bootstrap already included, you
