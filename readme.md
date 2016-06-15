@@ -21,7 +21,7 @@ To install a tagged version, use
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.0.0"
+  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.1.0"
 }
 ```
 
@@ -36,6 +36,7 @@ add_import_path "bower_components/pmgbootstraptheme/"
 $icon-font-path: "../bootstrap-sass/assets/fonts/bootstrap/"; //This needs to point to the glyphicons fonts
 @import "bootstrap";
 @import "assets/css/button";
+@import "assets/css/menu";
 ```
 
 If you would like the compiled version that has bootstrap already included, you
@@ -63,3 +64,14 @@ compass compile -e production --force
 
 ### Navigation
 Your navigation should following the bootstrap HTML example: http://getbootstrap.com/components/#navbar
+
+Logo/title should follow mirror this example:
+
+```
+<a class="navbar-brand" href="#">
+    <span class="logo">
+          <img src="{link_to_image}">
+      </span>
+      {tool_title}
+  </a>
+ ```
