@@ -21,7 +21,7 @@ To install a tagged version, use
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.1.0"
+  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.2.0"
 }
 ```
 
@@ -33,10 +33,10 @@ add_import_path "bower_components/pmgbootstraptheme/"
 
 ```scss
 @import "assets/css/variables";
-$icon-font-path: "../bootstrap-sass/assets/fonts/bootstrap/"; //This needs to point to the glyphicons fonts
+$icon-font-path: "../bootstrap-sass/assets/fonts/bootstrap/assets"; //This needs to point to the glyphicons fonts
 @import "bootstrap";
-@import "assets/css/button";
-@import "assets/css/menu";
+@import "pmgbootstrap/button";
+@import "pmgbootstrap/menu";
 ```
 
 If you would like the compiled version that has bootstrap already included, you

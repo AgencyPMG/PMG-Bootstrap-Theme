@@ -4,7 +4,7 @@ add_import_path "bower_components/bootstrap-sass/assets/stylesheets"
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "dist/css"
-sass_dir = "assets/css"
+sass_dir = "assets/pmgbootstrap"
 images_dir = "dist/images"
 javascripts_dir = "dist/scripts"
 
