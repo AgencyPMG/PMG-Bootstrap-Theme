@@ -63,6 +63,7 @@ compass compile -e production --force
 ```
 
 ### Navigation
+
 Your navigation should following the bootstrap HTML example: http://getbootstrap.com/components/#navbar
 
 Logo/title should follow mirror this example:
@@ -76,11 +77,11 @@ Logo/title should follow mirror this example:
   </a>
  ```
 
- ### Body
+### Body
 
  This theme adds a min-height to the content, for this you need to add a class named `main` to the body content wrapping divided
 
- ### Footer
+### Footer
 
 The footer should follow this HTML:
 
