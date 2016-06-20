@@ -21,7 +21,7 @@ To install a tagged version, use
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.2.0"
+  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.3.0"
 }
 ```
 
@@ -36,7 +36,7 @@ add_import_path "bower_components/pmgbootstraptheme/"
 $icon-font-path: "../bootstrap-sass/assets/fonts/bootstrap/assets"; //This needs to point to the glyphicons fonts
 @import "bootstrap";
 @import "pmgbootstrap/button";
-@import "pmgbootstrap/menu";
+@import "pmgbootstrap/theme";
 ```
 
 If you would like the compiled version that has bootstrap already included, you
@@ -75,3 +75,23 @@ Logo/title should follow mirror this example:
       {tool_title}
   </a>
  ```
+
+ ### Body
+
+ This theme adds a min-height to the content, for this you need to add a class named `main` to the body content wrapping divided
+
+ ### Footer
+
+The footer should follow this HTML:
+
+```
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <span class="copyright">© PMG Worldwide, LLC. All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+```
