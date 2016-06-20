@@ -79,7 +79,19 @@ Logo/title should follow mirror this example:
 
 ### Body
 
- This theme adds a min-height to the content, for this you need to add a class named `main` to the body content wrapping divided
+ This theme adds a min-height to the content, for this you need to add a class named `main` to the body content wrapping divided. I.e.
+
+```
+<header>
+    //nav
+</header>
+<div class="main">
+   //content
+</div>
+<footer>
+    //copyright notice
+</footer>
+```
 
 ### Footer
 
