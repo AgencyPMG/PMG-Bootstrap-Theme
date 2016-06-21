@@ -8831,8 +8831,8 @@ button.close {
 }
 
 /* line 10, ../../assets/pmgbootstrap/_theme.scss */
-footer,
-footer .copyright {
+footer[role="main"],
+.copyright {
   color: #c2c2c2;
   text-transform: uppercase;
   text-align: center;

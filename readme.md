@@ -21,7 +21,7 @@ To install a tagged version, use
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.3.0"
+  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.3.1"
 }
 ```
 
@@ -98,11 +98,11 @@ Logo/title should follow mirror this example:
 The footer should follow this HTML:
 
 ```
-<footer>
+<footer role="main">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <span class="copyright">© PMG Worldwide, LLC. All rights reserved.</span>
+                <p class="copyright">© PMG Worldwide, LLC. All rights reserved.</p>
             </div>
         </div>
     </div>
