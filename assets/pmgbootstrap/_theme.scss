@@ -1,3 +1,7 @@
+::selection {
+    background: lighten($brand-info, 45%);
+}
+
 .logo img {
     width: 20px;
     margin-top: -4px;

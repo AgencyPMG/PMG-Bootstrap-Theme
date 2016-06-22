@@ -3838,10 +3838,10 @@ output {
 }
 /* line 57, ../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #323851;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(50, 56, 81, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(50, 56, 81, 0.6);
 }
 /* line 103, ../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
 .form-control::-moz-placeholder {
@@ -8798,39 +8798,68 @@ button.close {
 .btn.btn-default {
   background-image: linear-gradient(-180deg, whitesmoke 0%, gainsboro 100%);
 }
-/* line 5, ../../assets/pmgbootstrap/_button.scss */
+/* line 4, ../../assets/pmgbootstrap/_button.scss */
+.btn.btn-default:hover {
+  background-image: linear-gradient(-180deg, gainsboro 0%, #c2c2c2 100%);
+}
+/* line 8, ../../assets/pmgbootstrap/_button.scss */
 .btn.btn-primary {
   background-image: linear-gradient(-180deg, #596490 0%, #323851 100%);
 }
-/* line 8, ../../assets/pmgbootstrap/_button.scss */
+/* line 10, ../../assets/pmgbootstrap/_button.scss */
+.btn.btn-primary:hover {
+  background-image: linear-gradient(-180deg, #323851 0%, #0b0c12 100%);
+}
+/* line 14, ../../assets/pmgbootstrap/_button.scss */
 .btn.btn-success {
   background-image: linear-gradient(-180deg, #5dc85c 0%, #318e30 100%);
 }
-/* line 11, ../../assets/pmgbootstrap/_button.scss */
+/* line 16, ../../assets/pmgbootstrap/_button.scss */
+.btn.btn-success:hover {
+  background-image: linear-gradient(-180deg, #318e30 0%, #174216 100%);
+}
+/* line 20, ../../assets/pmgbootstrap/_button.scss */
 .btn.btn-info {
   background-image: linear-gradient(-180deg, #77bbd0 0%, #3a8ea7 100%);
 }
-/* line 14, ../../assets/pmgbootstrap/_button.scss */
+/* line 22, ../../assets/pmgbootstrap/_button.scss */
+.btn.btn-info:hover {
+  background-image: linear-gradient(-180deg, #3a8ea7 0%, #204e5b 100%);
+}
+/* line 26, ../../assets/pmgbootstrap/_button.scss */
 .btn.btn-warning {
   background-image: linear-gradient(-180deg, #f2c788 0%, #E89B2C 100%);
 }
-/* line 17, ../../assets/pmgbootstrap/_button.scss */
+/* line 28, ../../assets/pmgbootstrap/_button.scss */
+.btn.btn-warning:hover {
+  background-image: linear-gradient(-180deg, #E89B2C 0%, #9d6411 100%);
+}
+/* line 32, ../../assets/pmgbootstrap/_button.scss */
 .btn.btn-danger {
   background-image: linear-gradient(-180deg, #e4544f 0%, #B2201B 100%);
 }
+/* line 34, ../../assets/pmgbootstrap/_button.scss */
+.btn.btn-danger:hover {
+  background-image: linear-gradient(-180deg, #B2201B 0%, #59100e 100%);
+}
 
 /* line 1, ../../assets/pmgbootstrap/_theme.scss */
+::selection {
+  background: #d6ebf1;
+}
+
+/* line 4, ../../assets/pmgbootstrap/_theme.scss */
 .logo img {
   width: 20px;
   margin-top: -4px;
 }
 
-/* line 6, ../../assets/pmgbootstrap/_theme.scss */
+/* line 9, ../../assets/pmgbootstrap/_theme.scss */
 .main {
   min-height: 500px;
 }
 
-/* line 10, ../../assets/pmgbootstrap/_theme.scss */
+/* line 13, ../../assets/pmgbootstrap/_theme.scss */
 footer[role="main"],
 .copyright {
   color: #c2c2c2;
