@@ -1,0 +1,16 @@
+.logo img {
+    width: 20px;
+    margin-top: -4px;
+}
+
+.main {
+    min-height: 500px;
+}
+
+footer[role="main"],
+.copyright {
+    color: $gray;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 15px 30px;
+}
