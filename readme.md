@@ -32,7 +32,7 @@ add_import_path "bower_components/pmgbootstraptheme/"
 ```
 
 ```scss
-@import "assets/css/variables";
+@import "pmgbootstrap/variables";
 $icon-font-path: "../bootstrap-sass/assets/fonts/bootstrap/assets"; //This needs to point to the glyphicons fonts
 @import "bootstrap";
 @import "pmgbootstrap/button";
