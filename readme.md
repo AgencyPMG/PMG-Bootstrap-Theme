@@ -28,7 +28,7 @@ To install a tagged version, use
 Include in your compass project
 ```
 require 'bootstrap-sass'
-add_import_path "bower_components/pmgbootstraptheme/"
+add_import_path "bower_components/pmgbootstraptheme/assets"
 ```
 
 ```scss
