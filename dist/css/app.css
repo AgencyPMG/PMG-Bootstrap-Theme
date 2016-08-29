@@ -8848,22 +8848,29 @@ button.close {
   background: #d6ebf1;
 }
 
-/* line 4, ../../assets/pmgbootstrap/_theme.scss */
+/* line 5, ../../assets/pmgbootstrap/_theme.scss */
 .logo img {
   width: 20px;
   margin-top: -4px;
 }
 
-/* line 9, ../../assets/pmgbootstrap/_theme.scss */
+/* line 10, ../../assets/pmgbootstrap/_theme.scss */
 .main {
   min-height: 500px;
 }
 
-/* line 13, ../../assets/pmgbootstrap/_theme.scss */
+/* line 14, ../../assets/pmgbootstrap/_theme.scss */
 footer[role="main"],
 .copyright {
   color: #c2c2c2;
   text-transform: uppercase;
   text-align: center;
   padding: 20px 15px 30px;
+}
+
+/* line 22, ../../assets/pmgbootstrap/_theme.scss */
+.no-clients {
+  text-align: center;
+  color: #767676;
+  margin: 60px auto;
 }
