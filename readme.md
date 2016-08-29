@@ -21,7 +21,7 @@ To install a tagged version, use
 
 ```json
 "dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.3.3"
+  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#v1.3.4"
 }
 ```
 
