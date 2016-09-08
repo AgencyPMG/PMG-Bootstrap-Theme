@@ -19,8 +19,18 @@ footer[role="main"],
     padding: 20px 15px 30px;
 }
 
+h1.inline-button {
+    line-height: 1;
+}
+
 .no-clients {
     text-align: center;
     color: $gray-dark;
     margin: 60px auto;
+}
+
+.client-table {
+    .client-name {
+        width: 60%;
+    }
 }

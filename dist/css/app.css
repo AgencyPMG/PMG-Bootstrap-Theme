@@ -8869,8 +8869,18 @@ footer[role="main"],
 }
 
 /* line 22, ../../assets/pmgbootstrap/_theme.scss */
+h1.inline-button {
+  line-height: 1;
+}
+
+/* line 26, ../../assets/pmgbootstrap/_theme.scss */
 .no-clients {
   text-align: center;
   color: #767676;
   margin: 60px auto;
+}
+
+/* line 33, ../../assets/pmgbootstrap/_theme.scss */
+.client-table .client-name {
+  width: 60%;
 }
