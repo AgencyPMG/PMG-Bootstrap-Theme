@@ -2,7 +2,19 @@
 
 html, body {
     font-weight: 300;
+    background-color: $gray-lighter;
+
+    & > .container {
+        background-color: white;
+        padding-top: 20px;
+        border-radius: 5px;
+        border: 1px solid #e3dfdf;
+    }
+    & > .container-fluid {
+        background-color: white;
+    }
 }
+
 
 .label.label-default {
     color: #424242;
