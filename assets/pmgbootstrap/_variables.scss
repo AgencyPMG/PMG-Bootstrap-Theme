@@ -15,21 +15,21 @@ $gray:                   $gray-base; //#c2c2c2
 $gray-light:             lighten($gray-base, 10%); //#dcdcdc
 $gray-lighter:           lighten($gray-base, 20%); //#f5f5f5
 
-$brand-primary:         #323851;
-$brand-primary-light:   lighten($brand-primary, 20%); //#656B84
-$brand-primary-dark:    darken($brand-primary, 20%); //#00051E
+$brand-primary:         #36406b;
+$brand-primary-light:   lighten($brand-primary, 10%); //#656B84
+$brand-primary-dark:    darken($brand-primary, 10%); //#00051E
 $brand-success:         #318e30;
-$brand-success-light:   lighten($brand-success, 20%); //#64C163
-$brand-success-dark:    darken($brand-success, 20%); //#005B00
+$brand-success-light:   lighten($brand-success, 10%); //#64C163
+$brand-success-dark:    darken($brand-success, 10%); //#005B00
 $brand-info:            #3a8ea7;
-$brand-info-light:      lighten($brand-info, 20%); //#6DC1DA
-$brand-info-dark:       darken($brand-info, 20%); //#075B74
+$brand-info-light:      lighten($brand-info, 10%); //#6DC1DA
+$brand-info-dark:       darken($brand-info, 10%); //#075B74
 $brand-warning:         #E89B2C;
-$brand-warning-light:   lighten($brand-warning, 20%); //#FFCE5F
-$brand-warning-dark:    darken($brand-warning, 20%); //#B56800
+$brand-warning-light:   lighten($brand-warning, 10%); //#FFCE5F
+$brand-warning-dark:    darken($brand-warning, 10%); //#B56800
 $brand-danger:          #B2201B;
-$brand-danger-light:    lighten($brand-danger, 20%); //#E5534E
-$brand-danger-dark:     darken($brand-danger, 20%); //#7F0000
+$brand-danger-light:    lighten($brand-danger, 10%); //#E5534E
+$brand-danger-dark:     darken($brand-danger, 10%); //#7F0000
 
 //== Scaffolding
 //
@@ -52,7 +52,7 @@ $link-hover-decoration: underline;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
