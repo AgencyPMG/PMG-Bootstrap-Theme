@@ -1,23 +1,38 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,300";
 
+@mixin main-container {
+    background-color: white;
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #e3dfdf;
+}
+
+@mixin main-container-fluid {
+    background-color: white;
+    margin-top: -20px;
+    padding-top: 20px;
+
+}
+
 html, body {
     font-weight: 300;
     background-color: $gray-lighter;
 
     & > .container {
-        background-color: white;
-        padding-top: 20px;
-        border-radius: 5px;
-        border: 1px solid #e3dfdf;
+        @include main-container();
     }
     & > .container-fluid {
-        background-color: white;
+        @include main-container-fluid();
     }
-}
 
-
-.label.label-default {
-    color: #424242;
+    .main, .main-wrap {
+        & > .container {
+            @include main-container();
+        }
+        & > .container-fluid {
+            @include main-container-fluid();
+        }
+    }
 }
 
 ::selection {
