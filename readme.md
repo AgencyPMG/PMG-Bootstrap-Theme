@@ -86,7 +86,9 @@ Logo/title should follow mirror this example:
     //nav
 </header>
 <div class="main">
+   <div class="container"> //can also be container-fluid
    //content
+   </div>
 </div>
 <footer>
     //copyright notice
