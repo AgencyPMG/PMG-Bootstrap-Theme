@@ -3,6 +3,7 @@
 @mixin main-container {
     background-color: white;
     padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #e3dfdf;
 }
@@ -11,13 +12,15 @@
     background-color: white;
     margin-top: -20px;
     padding-top: 20px;
-
+    padding-bottom: 20px;
 }
 
 html, body {
     font-weight: 300;
     background-color: $gray-lighter;
+}
 
+body {
     & > .container {
         @include main-container();
     }
