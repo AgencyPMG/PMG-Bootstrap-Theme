@@ -20,15 +20,12 @@ html, body {
     background-color: $gray-lighter;
 }
 
-body {
-    & > .container {
-        @include main-container();
-    }
-    & > .container-fluid {
-        @include main-container-fluid();
-    }
 
-    .main, .main-wrap {
+body {
+    .navbar {
+        padding: 10px;
+    }
+    .body, .main, .main-wrap {
         & > .container {
             @include main-container();
         }
@@ -37,6 +34,95 @@ body {
         }
     }
 }
+
+html.sidenav body > .body {
+    display: flex;
+    & > .navbar {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 250px;
+        background-color: $navbar-inverse-bg;
+        border-color: transparent;
+        padding: 0px;
+
+        @media (min-width: 768px) {
+            .navbar-nav > li {
+                float: none;
+            }
+        }
+
+        .navbar-header {
+            padding-top: 8px;
+        }
+
+        .navbar-brand {
+            color: #FFF;
+        }
+        li > a {
+            color: #B7C0CD;
+        }
+        li.active > a {
+            background-color:inherit;
+            color: #FFF;
+        }
+        .dropdown {
+            .caret {
+                display: none;
+            }
+            .dropdown-menu {
+                display: none;
+            }
+            &.active, &.open {
+                .dropdown-menu {
+                    display: inherit;
+                    background-color: inherit;
+                    border: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+
+                    .divider {
+                        opacity: 0;
+                    }
+                    li > a:hover, li > a:focus {
+                        background-color: inherit;
+                    }
+                }
+            }
+        }
+    }
+    .main-content {
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding-top: 0px;
+        background-color: $gray-lighter;
+
+        .breadcrumb {
+            background-color: transparent;
+            margin-bottom: 0px;
+        }
+
+        & > .container {
+            @include main-container();
+        }
+        & > .container-fluid {
+            @include main-container-fluid();
+        }
+
+        & > .title-bar {
+            margin-bottom: 20px;
+            color: #354052;
+            font-size: 24px;
+            padding-left: 30px;
+            padding-top: 35px;
+            background-color: white;
+        }
+
+
+    }
+
+
+}
+
 
 ::selection {
     background: lighten($brand-info, 45%);
