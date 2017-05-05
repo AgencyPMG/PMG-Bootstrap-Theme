@@ -3813,7 +3813,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #767676;
+  color: #222;
 }
 
 /* line 114, ../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
@@ -3824,7 +3824,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #767676;
+  color: #222;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -5324,7 +5324,7 @@ tbody.collapse.in {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #767676;
+  color: #222;
   text-align: center;
   background-color: #f8f8f8;
   border: 1px solid #ccc;
@@ -8891,11 +8891,16 @@ body .main > .container-fluid, body .main-wrap > .container-fluid {
 }
 
 /* line 50, ../../assets/pmgbootstrap/_theme.scss */
+.navbar-brand.logo img {
+  display: inline-block;
+}
+
+/* line 54, ../../assets/pmgbootstrap/_theme.scss */
 .main {
   min-height: 500px;
 }
 
-/* line 54, ../../assets/pmgbootstrap/_theme.scss */
+/* line 58, ../../assets/pmgbootstrap/_theme.scss */
 footer[role="main"],
 .copyright {
   color: #c2c2c2;
@@ -8904,19 +8909,19 @@ footer[role="main"],
   padding: 20px 15px 30px;
 }
 
-/* line 62, ../../assets/pmgbootstrap/_theme.scss */
+/* line 66, ../../assets/pmgbootstrap/_theme.scss */
 h1.inline-button {
   line-height: 1;
 }
 
-/* line 66, ../../assets/pmgbootstrap/_theme.scss */
+/* line 70, ../../assets/pmgbootstrap/_theme.scss */
 .no-clients {
   text-align: center;
   color: #767676;
   margin: 60px auto;
 }
 
-/* line 73, ../../assets/pmgbootstrap/_theme.scss */
+/* line 77, ../../assets/pmgbootstrap/_theme.scss */
 .client-table .client-name {
   width: 60%;
 }
