@@ -1,5 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,300";
 
+$sidenavbar-min-width: 1440px;
+
 @mixin main-container {
     background-color: white;
     padding-top: 20px;
@@ -15,24 +17,7 @@
     padding-bottom: 20px;
 }
 
-html, body {
-    font-weight: 300;
-    background-color: $gray-lighter;
-}
-
-
-body {
-    .navbar {
-        padding: 10px;
-    }
-    .main-content, .main, .main-wrap {
-        .breadcrumb {
-            background-color: transparent;
-        }
-    }
-}
-
-html:not(.sidenav) body {
+@mixin topbar-not-side-nav {
     .main-content {
         @include container-fixed;
         @include main-container();
@@ -55,93 +40,119 @@ html:not(.sidenav) body {
 
         }
     }
+
 }
 
-html.sidenav body > .body {
-    display: flex;
-    & > .navbar {
-        flex-grow: 0;
-        flex-shrink: 0;
-        width: 250px;
-        background-color: $navbar-inverse-bg;
-        border-color: transparent;
-        padding: 0px;
-        border-radius: 0px;
+html, body {
+    font-weight: 300;
+    background-color: $gray-lighter;
+}
 
-        @media (min-width: 768px) {
-            .navbar-nav > li {
-                float: none;
-            }
-        }
 
-        .navbar-header {
-            padding-top: 15px;
+body {
+    .navbar {
+        padding: 10px;
+    }
+    .main-content, .main, .main-wrap {
+        .breadcrumb {
+            background-color: transparent;
         }
+    }
+}
 
-        .navbar-brand {
-            color: #FFF;
-        }
-        li > a {
-            color: #B7C0CD;
-        }
-        li.active > a {
-            background-color:inherit;
-            color: #FFF;
-        }
-        .dropdown {
-            .caret {
-                display: none;
+html:not(.sidenav) body {
+    @include topbar-not-side-nav;
+}
+
+@media (max-width: $sidenavbar-min-width) {
+    @include topbar-not-side-nav;
+}
+
+
+@media (min-width: $sidenavbar-min-width) {
+    html.sidenav body > .body {
+        display: flex;
+        & > .navbar {
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: 250px;
+            background-color: $navbar-inverse-bg;
+            border-color: transparent;
+            padding: 0px;
+            border-radius: 0px;
+
+            @media (min-width: 768px) {
+                .navbar-nav > li {
+                    float: none;
+                }
             }
-            .dropdown-menu {
-                display: none;
+
+            .navbar-header {
+                padding-top: 15px;
             }
-            &.active, &.open {
+
+            .navbar-brand {
+                color: #FFF;
+            }
+            li > a {
+                color: #B7C0CD;
+            }
+            li.active > a {
+                background-color:inherit;
+                color: #FFF;
+            }
+            .dropdown {
+                .caret {
+                    display: none;
+                }
                 .dropdown-menu {
-                    display: inherit;
-                    background-color: inherit;
-                    border: none;
-                    -webkit-box-shadow: none;
-                    box-shadow: none;
-
-                    .divider {
-                        opacity: 0;
-                    }
-                    li > a:hover, li > a:focus {
+                    display: none;
+                }
+                &.active, &.open {
+                    .dropdown-menu {
+                        display: inherit;
                         background-color: inherit;
+                        border: none;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+
+                        .divider {
+                            opacity: 0;
+                        }
+                        li > a:hover, li > a:focus {
+                            background-color: inherit;
+                        }
                     }
                 }
             }
         }
+        .main-content {
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding-top: 0px;
+            background-color: $gray-lighter;
+
+
+            & > .container {
+                @include main-container();
+            }
+            & > .container-fluid {
+                @include main-container-fluid();
+            }
+
+            & > .title-bar {
+                margin-bottom: 20px;
+                color: #354052;
+                font-size: 24px;
+                padding-left: 30px;
+                padding-top: 35px;
+                padding-bottom: 0px;
+                background-color: white;
+            }
+        }
     }
-    .main-content {
-        flex-grow: 1;
-        flex-shrink: 1;
-        padding-top: 0px;
-        background-color: $gray-lighter;
-
-
-        & > .container {
-            @include main-container();
-        }
-        & > .container-fluid {
-            @include main-container-fluid();
-        }
-
-        & > .title-bar {
-            margin-bottom: 20px;
-            color: #354052;
-            font-size: 24px;
-            padding-left: 30px;
-            padding-top: 35px;
-            background-color: white;
-        }
-
-
-    }
-
 
 }
-
 
 ::selection {
     background: lighten($brand-info, 45%);
