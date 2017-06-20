@@ -2,10 +2,16 @@
   "name": "@agencypmg/bootstrap-theme",
   "version": "2.0.3",
   "description": "PMGs bootstrap theme",
+  "license": "MIT",
   "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/AgencyPMG/PMGBootstrapTheme/issues"
+  },
+  "homepage": "https://github.com/AgencyPMG/PMGBootstrapTheme",
   "scripts": {
     "prepublish": "./bin/compile"
   },
+  "author": "Chris Alvares <tech@pmg.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/AgencyPMG/PMGBootstrapTheme.git"
@@ -14,17 +20,16 @@
     "PMG",
     "Theme"
   ],
-  "author": "Chris Alvares <tech@pmg.com>",
   "dependencies": {
     "bootstrap-sass": "^3.3.7"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AgencyPMG/PMGBootstrapTheme/issues"
-  },
-  "homepage": "https://github.com/AgencyPMG/PMGBootstrapTheme",
   "devDependencies": {
     "node-sass": "^4.5.3",
     "rimraf": "^2.6.1"
-  }
+  },
+  "files": [
+    "assets",
+    "images",
+    "dist"
+  ]
 }
