@@ -15,6 +15,9 @@
     "Theme"
   ],
   "author": "Chris Alvares <tech@pmg.com>",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AgencyPMG/PMGBootstrapTheme/issues"
