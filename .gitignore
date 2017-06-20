@@ -1,4 +1,4 @@
 node_modules/
-dist/
+dist/app.css
 .sass-cache*
 .DS_Store
