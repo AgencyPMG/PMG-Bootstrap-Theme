@@ -7,60 +7,76 @@ and should not be combined.
 
 Note: You will need to install bootstrap-sass `gem install bootstrap-sass`. You may need to add bootstrap-sass to your server gem file `gem 'bootstrap-sass', '~> 3.3.6'`
 
-## How to install
+## Installation
 
-To install, add the following to your ```bower.json``` file
-
-```json
-"dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git"
-}
+```
+npm install --save @agencypmg/bootstrap-theme
 ```
 
-To install a tagged version, use
+## Usage
 
-```json
-"dependencies": {
-  "pmgbootstraptheme": "git@github.com:AgencyPMG/PMGBootstrapTheme.git#2.0.2"
-}
-```
+### Webpack
 
-Include in your compass project
+You'll need a few loaders:
+
 ```
-require 'bootstrap-sass'
-add_import_path "bower_components/pmgbootstraptheme/assets"
+npm install --save-dev sass-loader css-loader \
+    resolve-url-loader css-loader
 ```
 
-```scss
-@import "pmgbootstrap/variables";
-$icon-font-path: "../bootstrap-sass/assets/fonts/bootstrap/assets"; //This needs to point to the glyphicons fonts
-@import "bootstrap";
-@import "pmgbootstrap/button";
-@import "pmgbootstrap/theme";
+Then include `bootstrap-sass` and `@agencypmg/bootstrap-theme` in your
+`sass-loader` configuration.
+
+
+```js
+var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+var sassOptions = {
+    sourceMap: true,
+    outputStyle: 'compressed',
+    // setup bootstrap and @agencypmg/bootstrap!
+    includePaths: [
+        path.join(__dirname, 'node_modules', 'bootstrap-sass', 'assets', 'stylesheets'),
+        path.join(__dirname, 'node_modules', '@agencypmg', 'bootstraptheme', 'assets')
+    ]
+};
+var ex = new ExtractTextPlugin({
+    filename: 'css/[name].css',
+});
+var rules = [
+    // ...
+    {
+        test: /\.scss$/,
+        loader: ex.extract({
+            use: [{
+                loader: 'css-loader',
+                options: {
+                    import: false,
+                    url: true
+                }
+            }, {
+                loader: 'resolve-url-loader'
+            }, {
+                loader: 'sass-loader',
+                options: sassOptions,
+            }],
+            fallback: 'style-loader'
+        })
+    }
+];
 ```
+
+### Using the Precompiled Version
 
 If you would like the compiled version that has bootstrap already included, you
-can use the dist folder
+can use the dist folder.
+
 ```html
-<link href="bower_components/pmgbootstraptheme/dist/css/app.css" rel="stylesheet" />
+<link href="node_modules/@agencypmg/bootstrap-theme/dist/app.css" rel="stylesheet" />
 ```
 
-
-## How to compile
-
-To compile, first run ```bower install```, and then follow the steps below
-
-### Development
-```
-compass clean
-compass watch
-```
-
-### Production
-```
-compass clean
-compass compile -e production --force
-```
+## HTML Examples
 
 ### Navigation
 
@@ -104,9 +120,22 @@ The footer should follow this HTML:
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <p class="copyright">© PMG Worldwide, LLC. All rights reserved.</p>
+                <p class="copyright">&copy; PMG Worldwide, LLC. All rights reserved.</p>
             </div>
         </div>
     </div>
 </footer>
+```
+
+## Development
+
+```
+npm install
+# work work work
+```
+
+### Compiling
+
+```
+./bin/compile
 ```
