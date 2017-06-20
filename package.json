@@ -20,10 +20,11 @@
     "PMG",
     "Theme"
   ],
-  "dependencies": {
-    "bootstrap-sass": "^3.3.7"
+  "peerDependencies": {
+    "bootstrap-sass": "~3.3"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "node-sass": "^4.5.3",
     "rimraf": "^2.6.1"
   },
