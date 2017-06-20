@@ -4,7 +4,7 @@
   "description": "PMGs bootstrap theme",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "prepublish": "./bin/compile"
   },
   "repository": {
     "type": "git",
