@@ -1,0 +1,52 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var sass = require('node-sass');
+var rimraf = require('rimraf').sync;
+
+
+var root = path.normalize(path.join(__dirname, '..'));
+var dist = path.join(root, 'dist');
+
+
+function render(filename) {
+    var outFile = path.join(dist, path.basename(filename, '.scss')) + '.css'
+    var result = sass.renderSync({
+        file: filename,
+        includePaths: [
+            path.join(root, 'node_modules', 'bootstrap-sass', 'assets', 'stylesheets')
+        ],
+        outFile: outFile,
+        outputStyle: 'compressed'
+    });
+    result.outFile = outFile;
+
+    return result;
+}
+
+
+function writeResult(result) {
+    fs.writeFileSync(result.outFile, result.css);
+}
+
+function renderAndWrite(filename) {
+    var result = render(filename);
+    writeResult(result);
+
+    return result;
+}
+
+function main() {
+    rimraf(dist);
+    fs.mkdirSync(dist);
+    var result = renderAndWrite(path.join(
+        root,
+        'assets',
+        'pmgbootstrap',
+        'app.scss'
+    ));
+    console.log(result.stats);
+}
+
+main()
