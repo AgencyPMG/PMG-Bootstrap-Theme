@@ -52,7 +52,7 @@ $link-hover-decoration: underline;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, 'Source Sans Pro', "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -116,9 +116,9 @@ $padding-xs-horizontal:     5px;
 $line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5;
 
-$border-radius-base:        2px;
-$border-radius-large:       2px;
-$border-radius-small:       2px;
+$border-radius-base:        4px;
+$border-radius-large:       4px;
+$border-radius-small:       4px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff;
@@ -160,7 +160,7 @@ $btn-font-weight:                normal;
 
 $btn-default-color:              darken($gray-dark, 10%);
 $btn-default-bg:                 $gray-lighter;
-$btn-default-border:             $gray-light;
+$btn-default-border:             #CED0DA;
 
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
@@ -386,7 +386,7 @@ $navbar-default-border:            darken($navbar-default-bg, 6.5%);
 $navbar-default-link-color:                #9FA9BA;
 $navbar-default-link-hover-color:          darken($navbar-default-link-color, 10%);
 $navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         #354052;
+$navbar-default-link-active-color:         #9FA9BA;
 $navbar-default-link-active-bg:            transparent;
 $navbar-default-link-disabled-color:       #ccc;
 $navbar-default-link-disabled-bg:          transparent;

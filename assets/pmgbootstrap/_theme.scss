@@ -25,12 +25,34 @@ body {
     .navbar {
         padding: 10px;
     }
-    .body, .main, .main-wrap {
+    .main-content, .main, .main-wrap {
+        .breadcrumb {
+            background-color: transparent;
+        }
+    }
+}
+
+html:not(.sidenav) body {
+    .main-content {
+        @include container-fixed;
+        @include main-container();
+        padding-left: 0;
+        padding-right: 0;
+
+        @media (min-width: $screen-sm-min) {
+            width: $container-sm;
+        }
+        @media (min-width: $screen-md-min) {
+            width: $container-md;
+        }
+        @media (min-width: $screen-lg-min) {
+            width: $container-lg;
+        }
         & > .container {
-            @include main-container();
+
         }
         & > .container-fluid {
-            @include main-container-fluid();
+
         }
     }
 }
@@ -44,6 +66,7 @@ html.sidenav body > .body {
         background-color: $navbar-inverse-bg;
         border-color: transparent;
         padding: 0px;
+        border-radius: 0px;
 
         @media (min-width: 768px) {
             .navbar-nav > li {
@@ -52,7 +75,7 @@ html.sidenav body > .body {
         }
 
         .navbar-header {
-            padding-top: 8px;
+            padding-top: 15px;
         }
 
         .navbar-brand {
@@ -96,10 +119,6 @@ html.sidenav body > .body {
         padding-top: 0px;
         background-color: $gray-lighter;
 
-        .breadcrumb {
-            background-color: transparent;
-            margin-bottom: 0px;
-        }
 
         & > .container {
             @include main-container();
