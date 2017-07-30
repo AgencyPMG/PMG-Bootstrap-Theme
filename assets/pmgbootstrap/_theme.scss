@@ -18,6 +18,11 @@ $sidenavbar-min-width: 1440px;
 }
 
 @mixin topbar-not-side-nav {
+
+    body > .body {
+        min-height: inherit;
+    }
+
     .main-content {
         @include container-fixed;
         @include main-container();
@@ -72,6 +77,7 @@ html:not(.sidenav) body {
 @media (min-width: $sidenavbar-min-width) {
     html.sidenav body > .body {
         display: flex;
+        min-height: 100vh;
         & > .navbar {
             flex-grow: 0;
             flex-shrink: 0;
@@ -80,10 +86,13 @@ html:not(.sidenav) body {
             border-color: transparent;
             padding: 0px;
             border-radius: 0px;
-
+            margin-bottom: 0px;
             @media (min-width: 768px) {
                 .navbar-nav > li {
                     float: none;
+                }
+                .navbar-nav.pull-right {
+                    float: left !important;
                 }
             }
 
@@ -111,6 +120,7 @@ html:not(.sidenav) body {
                 &.active, &.open {
                     .dropdown-menu {
                         display: inherit;
+                        position:inherit;
                         background-color: inherit;
                         border: none;
                         -webkit-box-shadow: none;
