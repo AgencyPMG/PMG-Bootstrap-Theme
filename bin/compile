@@ -21,10 +21,8 @@ function render(filename) {
         outputStyle: 'compressed'
     });
     result.outFile = outFile;
-
     return result;
 }
-
 
 function writeResult(result) {
     fs.writeFileSync(result.outFile, result.css);
@@ -33,7 +31,6 @@ function writeResult(result) {
 function renderAndWrite(filename) {
     var result = render(filename);
     writeResult(result);
-
     return result;
 }
 

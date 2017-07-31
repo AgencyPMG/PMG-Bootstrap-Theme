@@ -18,11 +18,9 @@ $sidenavbar-min-width: 1440px;
 }
 
 @mixin topbar-not-side-nav {
-
     body > .body {
         min-height: inherit;
     }
-
     .main-content {
         @include container-fixed;
         @include main-container();
@@ -37,12 +35,6 @@ $sidenavbar-min-width: 1440px;
         }
         @media (min-width: $screen-lg-min) {
             width: $container-lg;
-        }
-        & > .container {
-
-        }
-        & > .container-fluid {
-
         }
     }
 
@@ -85,9 +77,9 @@ html:not(.sidenav) body {
             width: 250px;
             background-color: $navbar-inverse-bg;
             border-color: transparent;
-            padding: 0px;
-            border-radius: 0px;
-            margin-bottom: 0px;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 0;
             @media (min-width: 768px) {
                 .navbar-nav > li {
                     float: none;
@@ -96,7 +88,6 @@ html:not(.sidenav) body {
                     float: left !important;
                 }
             }
-
             .navbar-header {
                 padding-top: 15px;
             }
@@ -108,7 +99,7 @@ html:not(.sidenav) body {
                 color: #B7C0CD;
             }
             li.active > a {
-                background-color:inherit;
+                background-color: inherit;
                 color: #FFF;
             }
             .dropdown {
@@ -121,12 +112,11 @@ html:not(.sidenav) body {
                 &.active, &.open {
                     .dropdown-menu {
                         display: inherit;
-                        position:inherit;
+                        position: inherit;
                         background-color: inherit;
                         border: none;
                         -webkit-box-shadow: none;
                         box-shadow: none;
-
                         .divider {
                             opacity: 0;
                         }
@@ -140,29 +130,25 @@ html:not(.sidenav) body {
         .main-content {
             flex-grow: 1;
             flex-shrink: 1;
-            padding-top: 0px;
+            padding-top: 0;
             background-color: $gray-lighter;
-
-
             & > .container {
                 @include main-container();
             }
             & > .container-fluid {
                 @include main-container-fluid();
             }
-
             & > .title-bar {
                 margin-bottom: 20px;
-                color: #354052;
+                color: $navbar-default-brand-color;
                 font-size: 24px;
                 padding-left: 30px;
                 padding-top: 35px;
-                padding-bottom: 0px;
-                background-color: white;
+                padding-bottom: 0;
+                background-color: #fff;
             }
         }
     }
-
 }
 
 ::selection {
