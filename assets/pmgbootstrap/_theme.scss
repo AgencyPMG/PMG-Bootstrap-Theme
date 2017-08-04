@@ -21,6 +21,9 @@ $sidenavbar-min-width: 1440px;
     body > .body {
         min-height: inherit;
     }
+    .navbar-brand .logo {
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9Ii0xNzggMzY0LjYgNzkuNCA2NC40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IC0xNzggMzY0LjYgNzkuNCA2NC40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojMDBBMkI5O30NCgkuc3Qxe2ZpbGw6IzAwMDt9DQo8L3N0eWxlPg0KPGc+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTS0xMTkuNSwzODcuOWwtMjEuNS0xOC44Yy00LjYtNC0xMS41LTMuNS0xNS41LDFsLTE4LjgsMjEuNWMtNCw0LjYtMy41LDExLjUsMSwxNS41bDIxLjUsMTguOA0KCQljMy40LDMsOC4xLDMuNSwxMS45LDEuN2wtOC4zLTcuM2MwLDAsMCwwLTAuMS0wLjFsLTE5LjgtMTcuM2MtMi4zLTItMi41LTUuNS0wLjUtNy44bDE3LjQtMTkuOGMyLTIuMyw1LjUtMi41LDcuNy0wLjVsMTkuOCwxNy40DQoJCWMyLjMsMiwyLjUsNS41LDAuNSw3LjdsLTMuOCw0LjRsNSw0LjNsNC42LTUuMkMtMTE0LjUsMzk4LjgtMTE0LjksMzkxLjktMTE5LjUsMzg3LjkiLz4NCgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNLTEwMi4zLDM4OC4xbC0yMS41LTE4LjhjLTMuNC0zLTguMS0zLjUtMTEuOS0xLjdsOC4zLDcuM2MwLDAsMCwwLDAuMSwwbDE5LjgsMTcuNGMyLjMsMiwyLjUsNS41LDAuNSw3LjcNCgkJbC0xNy4zLDE5LjljLTIsMi4zLTUuNSwyLjUtNy43LDAuNWwtMTkuOS0xNy40Yy0yLjMtMi0yLjUtNS41LTAuNS03LjdsMy45LTQuNGwtNS00LjNsLTQuNiw1LjJjLTQsNC42LTMuNSwxMS41LDEsMTUuNWwyMS41LDE4LjgNCgkJYzQuNiw0LDExLjUsMy41LDE1LjUtMWwxOC44LTIxLjVDLTk3LjMsMzk5LTk3LjcsMzkyLjEtMTAyLjMsMzg4LjEiLz4NCjwvZz4NCjwvc3ZnPg0K');
+    }
     .main-content {
         @include container-fixed;
         @include main-container();
@@ -55,6 +58,20 @@ body {
             background-color: transparent;
             text-transform: lowercase;
         }
+    }
+}
+
+.navbar-brand .logo {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 3px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9Ii0xNzggMzY0LjYgNzkuNCA2NC40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IC0xNzggMzY0LjYgNzkuNCA2NC40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojMDBBMkI5O30NCgkuc3Qxe2ZpbGw6I0ZGRkZGRjt9DQo8L3N0eWxlPg0KPGc+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTS0xMTkuNSwzODcuOWwtMjEuNS0xOC44Yy00LjYtNC0xMS41LTMuNS0xNS41LDFsLTE4LjgsMjEuNWMtNCw0LjYtMy41LDExLjUsMSwxNS41bDIxLjUsMTguOA0KCQljMy40LDMsOC4xLDMuNSwxMS45LDEuN2wtOC4zLTcuM2MwLDAsMCwwLTAuMS0wLjFsLTE5LjgtMTcuM2MtMi4zLTItMi41LTUuNS0wLjUtNy44bDE3LjQtMTkuOGMyLTIuMyw1LjUtMi41LDcuNy0wLjVsMTkuOCwxNy40DQoJCWMyLjMsMiwyLjUsNS41LDAuNSw3LjdsLTMuOCw0LjRsNSw0LjNsNC42LTUuMkMtMTE0LjUsMzk4LjgtMTE0LjksMzkxLjktMTE5LjUsMzg3LjkiLz4NCgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNLTEwMi4zLDM4OC4xbC0yMS41LTE4LjhjLTMuNC0zLTguMS0zLjUtMTEuOS0xLjdsOC4zLDcuM2MwLDAsMCwwLDAuMSwwbDE5LjgsMTcuNGMyLjMsMiwyLjUsNS41LDAuNSw3LjcNCgkJbC0xNy4zLDE5LjljLTIsMi4zLTUuNSwyLjUtNy43LDAuNWwtMTkuOS0xNy40Yy0yLjMtMi0yLjUtNS41LTAuNS03LjdsMy45LTQuNGwtNS00LjNsLTQuNiw1LjJjLTQsNC42LTMuNSwxMS41LDEsMTUuNWwyMS41LDE4LjgNCgkJYzQuNiw0LDExLjUsMy41LDE1LjUtMWwxOC44LTIxLjVDLTk3LjMsMzk5LTk3LjcsMzkyLjEtMTAyLjMsMzg4LjEiLz4NCjwvZz4NCjwvc3ZnPg0K');
+
+    img {
+        display: none;
     }
 }
 
@@ -103,9 +120,6 @@ html:not(.sidenav) body {
                 color: #FFF;
             }
             .dropdown {
-                .caret {
-                    display: none;
-                }
                 .dropdown-menu {
                     display: none;
                 }
@@ -158,10 +172,6 @@ html:not(.sidenav) body {
 .logo img {
     width: 20px;
     margin-top: -4px;
-}
-
-.navbar-brand.logo img {
-  display: inline-block;
 }
 
 .main {

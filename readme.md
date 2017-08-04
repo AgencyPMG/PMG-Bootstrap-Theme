@@ -95,25 +95,38 @@ Logo/title should follow mirror this example:
 
  This theme adds a min-height to the content, for this you need to add a class named `main` to the body content wrapping divided. I.e.
 
-```
-<header>
-    //nav
-</header>
-<div class="main">
-   <div class="container"> //can also be container-fluid
-   //content
-   </div>
+```html
+<html class="sidenav">
+    <body>
+        <div class="body">
+            <nav class="navbar navbar-default">
+                ...
+            </nav>
+            <div class="main-content" role="main">
+                <div class="container-fluid title-bar">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="container"> <!-- or container fluid -->
+                 content goes here
+                </div>
+                <footer role="main">
+                    ...
+                </footer>
+            </div>
+        </div>
+    </body>
 </div>
-<footer>
-    //copyright notice
-</footer>
 ```
 
 ### Footer
 
 The footer should follow this HTML:
 
-```
+```html
 <footer role="main">
     <div class="container">
         <div class="row">
