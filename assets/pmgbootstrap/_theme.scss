@@ -29,7 +29,7 @@ $sidenavbar-min-width: 1440px;
         @include main-container();
         padding-left: 0;
         padding-right: 0;
-
+        margin-bottom: 20px;
         @media (min-width: $screen-sm-min) {
             width: $container-sm;
         }
