@@ -133,6 +133,10 @@ html:not(.sidenav) body {
                         border: none;
                         -webkit-box-shadow: none;
                         box-shadow: none;
+                        max-height: 280px;
+                        max-width: 220px;
+                        overflow-y: scroll;
+                        word-break: break-word;
                         .divider {
                             opacity: 0;
                         }
