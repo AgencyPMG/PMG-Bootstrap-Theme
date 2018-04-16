@@ -7,7 +7,8 @@ $sidenavbar-min-width: 1440px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid #e3dfdf;
+    border: 1px solid rgba(0, 40, 100, 0.12);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 @mixin main-container-fluid {
@@ -45,7 +46,7 @@ $sidenavbar-min-width: 1440px;
 
 html, body {
     font-weight: 300;
-    background-color: $gray-lighter;
+    background-color: $base-background-color;
 }
 
 
