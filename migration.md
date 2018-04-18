@@ -10,7 +10,7 @@ layout file.
 Because of the way the titles work, the general layout has changed slightly.
 
 ```html
-<html class="sidenav">
+<html>
     <body>
         <div class="body">
             <nav class="navbar navbar-default">

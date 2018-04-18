@@ -96,7 +96,7 @@ Logo/title should follow mirror this example:
  This theme adds a min-height to the content, for this you need to add a class named `main` to the body content wrapping divided. I.e.
 
 ```html
-<html class="sidenav">
+<html>
     <body>
         <div class="body">
             <nav class="navbar navbar-default">
