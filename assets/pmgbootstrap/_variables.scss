@@ -15,6 +15,7 @@ $gray:                   $gray-base; //#c2c2c2
 $gray-light:             lighten($gray-base, 10%); //#dcdcdc
 $gray-lighter:           lighten($gray-base, 21%); //#f8f8f8
 
+$base-background-color: #f5f7fb;
 $brand-primary:         #36406b;
 $brand-primary-light:   lighten($brand-primary, 10%); //#47548d
 $brand-primary-dark:    darken($brand-primary, 10%); //#36406b
@@ -78,7 +79,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 $headings-font-family:    inherit;
 $headings-font-weight:    500;
 $headings-line-height:    1.1;
-$headings-color:          inherit;
+$headings-color:          #495057;
 
 
 //== Iconography
@@ -380,7 +381,7 @@ $navbar-collapse-max-height:       340px;
 
 $navbar-default-color:             #777;
 $navbar-default-bg:                #fff;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%);
+$navbar-default-border:            rgba(0, 40, 100, 0.12);
 
 // Navbar links
 $navbar-default-link-color:                #9FA9BA;
