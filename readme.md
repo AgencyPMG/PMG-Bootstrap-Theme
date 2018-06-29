@@ -153,6 +153,6 @@ npm install
 
 ### Compiling
 
-To publish a new version on NPM, update the tag in (package.json)[https://github.com/AgencyPMG/PMG-Bootstrap-Theme/blob/master/package.json#L3]
+To publish a new version on NPM, update the tag in [package.json](https://github.com/AgencyPMG/PMG-Bootstrap-Theme/blob/master/package.json#L3)
 
 Once your PR is merged type `npm publish` in terminal.
