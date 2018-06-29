@@ -1,6 +1,6 @@
 {
   "name": "@agencypmg/bootstrap-theme",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "PMGs bootstrap theme",
   "license": "MIT",
   "main": "index.js",
