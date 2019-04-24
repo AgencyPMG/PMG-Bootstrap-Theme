@@ -37,4 +37,39 @@
         }
     }
 
+    &.btn-link-primary {
+        @extend .btn-link;
+        color: $brand-primary;
+        &:hover {
+            color: $brand-primary-dark;
+        }
+    }
+    &.btn-link-success {
+        @extend .btn-link;
+        color: $brand-success;
+        &:hover {
+            color: $brand-success-dark;
+        }
+    }
+    &.btn-link-info {
+        @extend .btn-link;
+        color: $brand-info;
+        &:hover {
+            color: $brand-info-dark;
+        }
+    }
+    &.btn-link-warning {
+        @extend .btn-link;
+        color: $brand-warning;
+        &:hover {
+            color: $brand-warning-dark;
+        }
+    }
+    &.btn-link-danger {
+        @extend .btn-link;
+        color: $brand-danger;
+        &:hover {
+            color: $brand-danger-dark;
+        }
+    }
 }
