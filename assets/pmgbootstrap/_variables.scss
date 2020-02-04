@@ -9,28 +9,33 @@ $bootstrap-sass-asset-helper: false;
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-base:              #c2c2c2;
-$gray-darker:            #222; //
+$gray-darker:            #3E3F42; //
 $gray-dark:              darken($gray-base, 30%);   // #8F8F8F
 $gray:                   $gray-base; //#c2c2c2
 $gray-light:             lighten($gray-base, 10%); //#dcdcdc
 $gray-lighter:           lighten($gray-base, 21%); //#f8f8f8
 
 $base-background-color: #f5f7fb;
-$brand-primary:         #36406b;
+
+$brand-primary:         #0C69EA;
 $brand-primary-light:   lighten($brand-primary, 10%); //#47548d
-$brand-primary-dark:    darken($brand-primary, 10%); //#36406b
-$brand-success:         #318e30;
+$brand-primary-dark:    #0E5BD7;
+
+$brand-success:         #389E0D;
 $brand-success-light:   lighten($brand-success, 10%); //#3eb43d
-$brand-success-dark:    darken($brand-success, 10%); //#318e30
-$brand-info:            #3a8ea7;
+$brand-success-dark:    #237804;
+
+$brand-info:            #03A595;
 $brand-info-light:      lighten($brand-info, 10%); //#51a9c3
-$brand-info-dark:       darken($brand-info, 10%); //#3a8ea7
-$brand-warning:         #E89B2C;
+$brand-info-dark:       #00877F;
+
+$brand-warning:         #FA8C16;
 $brand-warning-light:   lighten($brand-warning, 10%); //#edb15a
-$brand-warning-dark:    darken($brand-warning, 10%); //#E89B2C
-$brand-danger:          #B2201B;
+$brand-warning-dark:    #D46B08;
+
+$brand-danger:          #D6010D;
 $brand-danger-light:    lighten($brand-danger, 10%); //#de2922
-$brand-danger-dark:     darken($brand-danger, 10%); //#B2201B
+$brand-danger-dark:     #BD000C;
 
 //== Scaffolding
 //
@@ -53,13 +58,13 @@ $link-hover-decoration: underline;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, 'Source Sans Pro', "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          14px;
+$font-size-base:          16px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
@@ -511,21 +516,21 @@ $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5));
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             $brand-success;
-$state-success-bg:               lighten($brand-success-light, 38%);
-$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%);
+$state-success-text:             $gray-darker;
+$state-success-bg:               #F6FFED;
+$state-success-border:           #B7EB8F;
 
-$state-info-text:                $brand-info;
-$state-info-bg:                  lighten($brand-info-light, 25%);
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%);
+$state-info-text:                $gray-darker;
+$state-info-bg:                  #E6F7FF;
+$state-info-border:              #4DABFF;
 
-$state-warning-text:             $brand-warning;
-$state-warning-bg:               lighten($brand-warning-light, 19%);
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
+$state-warning-text:             $gray-darker;
+$state-warning-bg:               #FFF7E6;
+$state-warning-border:           #FFD591;
 
-$state-danger-text:              $brand-danger;
-$state-danger-bg:                lighten($brand-danger-light, 29%);
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
+$state-danger-text:              $gray-darker;
+$state-danger-bg:                #FFF1F0;
+$state-danger-border:            #FFA39E;
 
 //== Tooltips
 //
