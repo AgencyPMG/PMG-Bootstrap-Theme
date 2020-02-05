@@ -1,37 +1,55 @@
 .btn {
+    border: none;
+    transition: .2s;
     &.btn-link-primary {
         @extend .btn-link;
         color: $brand-primary;
         &:hover {
-            color: $brand-primary-dark;
+            color: $brand-primary-light;
         }
     }
     &.btn-link-success {
         @extend .btn-link;
         color: $brand-success;
         &:hover {
-            color: $brand-success-dark;
+            color: $brand-success-light;
         }
     }
     &.btn-link-info {
         @extend .btn-link;
         color: $brand-info;
         &:hover {
-            color: $brand-info-dark;
+            color: $brand-info-light;
         }
     }
     &.btn-link-warning {
         @extend .btn-link;
         color: $brand-warning;
         &:hover {
-            color: $brand-warning-dark;
+            color: $brand-warning-light;
         }
     }
     &.btn-link-danger {
         @extend .btn-link;
         color: $brand-danger;
         &:hover {
-            color: $brand-danger-dark;
+            color: $brand-danger-light;
         }
+    }
+
+    &.btn-primary:hover {
+        background: $brand-primary-light;
+    }
+    &.btn-success:hover {
+        background: $brand-success-light;
+    }
+    &.btn-info:hover {
+        background: $brand-info-light;
+    }
+    &.btn-warning:hover {
+        background: $brand-warning-light;
+    }
+    &.btn-danger:hover {
+        background: $brand-danger-light;
     }
 }
