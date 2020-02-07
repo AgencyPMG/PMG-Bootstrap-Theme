@@ -1,0 +1,12 @@
+table {
+    th {
+        a {
+            color: $gray-darker;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                color: $brand-primary;
+            }
+        }
+    }
+}
