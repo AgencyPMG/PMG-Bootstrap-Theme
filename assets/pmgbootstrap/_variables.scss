@@ -8,12 +8,15 @@ $bootstrap-sass-asset-helper: false;
 //
 //## Gray and brand colors for use across Bootstrap.
 
+$border: #E8E8E8;
+$border2: #d9d9d9;
+
 $gray-base:              #c2c2c2;
 $gray-darker:            #3E3F42; //
 $gray-dark:              darken($gray-base, 30%);   // #8F8F8F
 $gray:                   $gray-base; //#c2c2c2
 $gray-light:             lighten($gray-base, 10%); //#dcdcdc
-$gray-lighter:           lighten($gray-base, 21%); //#f8f8f8
+$gray-lighter:           #FAFAFA;
 
 $base-background-color: #f5f7fb;
 
@@ -64,7 +67,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          16px;
+$font-size-base:          14px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
@@ -142,7 +145,7 @@ $caret-width-large:         5px;
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-$table-cell-padding:            8px;
+$table-cell-padding:            12px 8px;
 //** Padding for cells in `.table-condensed`.
 $table-condensed-cell-padding:  5px;
 
@@ -155,7 +158,7 @@ $table-bg-hover:                #f5f5f5;
 $table-bg-active:               $table-bg-hover;
 
 //** Border color for table and cell borders.
-$table-border-color:            #eee;
+$table-border-color:            $border;
 
 
 //== Buttons
@@ -377,7 +380,7 @@ $container-lg:                 $container-large-desktop;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px;
+$navbar-height:                    60px;
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             $border-radius-base;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
@@ -386,11 +389,11 @@ $navbar-collapse-max-height:       340px;
 
 $navbar-default-color:             #777;
 $navbar-default-bg:                #fff;
-$navbar-default-border:            rgba(0, 40, 100, 0.12);
+$navbar-default-border:            $border2;
 
 // Navbar links
-$navbar-default-link-color:                #727f94;
-$navbar-default-link-hover-color:          darken($navbar-default-link-color, 10%);
+$navbar-default-link-color:                $gray-darker;
+$navbar-default-link-hover-color:          $brand-primary;
 $navbar-default-link-hover-bg:             transparent;
 $navbar-default-link-active-color:         $navbar-default-link-color;
 $navbar-default-link-active-bg:            transparent;
@@ -405,7 +408,7 @@ $navbar-default-brand-hover-bg:            transparent;
 // Navbar toggle
 $navbar-default-toggle-hover-bg:           #ddd;
 $navbar-default-toggle-icon-bar-bg:        #888;
-$navbar-default-toggle-border-color:       #ddd;
+$navbar-default-toggle-border-color:       $brand-primary;
 
 
 //=== Inverted navbar
@@ -446,13 +449,13 @@ $nav-disabled-link-color:                   $gray-light;
 $nav-disabled-link-hover-color:             $gray-light;
 
 //== Tabs
-$nav-tabs-border-color:                     #ddd;
+$nav-tabs-border-color:                     $border2;
 
-$nav-tabs-link-hover-border-color:          $gray-lighter;
+$nav-tabs-link-hover-border-color:          $brand-primary;
 
-$nav-tabs-active-link-hover-bg:             $body-bg;
-$nav-tabs-active-link-hover-color:          $gray-dark;
-$nav-tabs-active-link-hover-border-color:   #ddd;
+$nav-tabs-active-link-hover-bg:             transparent;
+$nav-tabs-active-link-hover-color:          $brand-primary;
+$nav-tabs-active-link-hover-border-color:   $brand-primary;
 
 $nav-tabs-justified-link-border-color:            #ddd;
 $nav-tabs-justified-active-link-border-color:     $body-bg;
@@ -858,7 +861,6 @@ $pre-bg:                      #f5f5f5;
 $pre-color:                   $gray-dark;
 $pre-border-color:            #ccc;
 $pre-scrollable-max-height:   340px;
-
 
 //== Type
 //

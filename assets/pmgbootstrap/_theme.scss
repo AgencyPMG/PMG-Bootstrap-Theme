@@ -4,9 +4,6 @@
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 40, 100, 0.12);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 @mixin main-container-fluid {
@@ -44,14 +41,10 @@
 
 html, body {
     font-weight: 300;
-    background-color: $base-background-color;
 }
 
 
 body {
-    .navbar {
-        padding: 10px;
-    }
     .main-content, .main, .main-wrap {
         .title-bar .breadcrumb {
             background-color: transparent;
@@ -59,6 +52,16 @@ body {
             padding-left: 0px;
         }
     }
+}
+.navbar-nav li a {
+    line-height: 50px;
+    padding: 5px 20px 0;
+    transition: 0.2s;
+    &:hover {
+        border-bottom: 5px solid $brand-primary;
+        box-sizing: border-box;
+    }
+
 }
 
 .navbar-brand .logo {
@@ -116,4 +119,40 @@ h1.inline-button {
 
 .tooltip {
     word-wrap: break-word;
+}
+
+
+.nav-tabs {
+    border: none;
+    li {
+        border: 1px solid $border2;
+        box-sizing: border-box;
+        border-radius: 0;
+        transition: 0.2s;
+        a {
+            border: none;
+            margin-right: 0;
+            border-radius: 0;
+            color: $gray-darker;
+            transition: 0.2s;
+            &:hover {
+                background: none;
+                color: $brand-primary;
+            }
+        }
+        &.active,
+        &:hover {
+            border-color: $brand-primary;
+            a,
+            a:hover {
+                border: none;
+            }
+        }
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+        &:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+    }
 }
