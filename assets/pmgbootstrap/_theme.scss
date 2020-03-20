@@ -13,30 +13,22 @@
     padding-bottom: 20px;
 }
 
-@mixin topbar-not-side-nav {
-    body > .body {
-        min-height: inherit;
-    }
-    .navbar-brand .logo {
-        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImxvZ28tbGF5ZXJzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiCgkgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTkyLjggMTQ3LjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5Mi44IDE0Ny42OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzAwQTZCNTt9Cgkuc3Qxe2ZpbGw6IzAwNjg3Rjt9Cjwvc3R5bGU+Cjx0aXRsZT5wbWdfbG9nbzwvdGl0bGU+CjxnIGlkPSJzaGFwZXMiPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTgyLDEyNS4xYy01LjYsNC0xMy4zLDMuNC0xOC4yLTEuNUwyNCw4My44Yy01LjUtNS41LTUuNS0xNC41LDAtMjBMNjMuOCwyNGM0LjktNC45LDEyLjYtNS41LDE4LjItMS41CgkJTDk0LjUsMTBjMC41LTAuNiwxLjEtMSwxLjctMS42QzgyLjctMy40LDYyLjQtMi43LDQ5LjcsMTBMMTAsNDkuN0MtMy4zLDYzLTMuMyw4NC42LDEwLDk3LjlsMzkuNywzOS43YzEyLjcsMTIuNywzMywxMy40LDQ2LjUsMS42CgkJYy0wLjYtMC41LTEuMi0xLTEuNy0xLjZMODIsMTI1LjF6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTYuMiwzNi40bDI3LjQsMjcuM2M1LjUsNS42LDUuNSwxNC41LDAsMjAuMWwtMjcuNCwyNy40bDEyLjQsMTIuNGMwLjYsMC42LDEuMiwxLjEsMS44LDEuNWwyNy4zLTI3LjIKCQljMTMuMi0xMy40LDEzLjItMzQuOCwwLTQ4LjJsLTI3LjMtMjcuMmMtMC43LDAuNC0xLjMsMC45LTEuOCwxLjVMOTYuMiwzNi40eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE4Mi40LDQ5LjdMMTQyLjcsMTBDMTMwLTIuNywxMDkuNy0zLjQsOTYuMiw4LjRjMC42LDAuNSwxLjIsMSwxLjcsMS42bDEyLjUsMTIuNWM1LjYtNCwxMy4zLTMuNCwxOC4yLDEuNQoJCWwzOS44LDM5LjhjNS41LDUuNSw1LjUsMTQuNSwwLDIwbC0zOS44LDM5LjhjLTQuOSw0LjktMTIuNiw1LjUtMTguMiwxLjVsLTEyLjUsMTIuNWMtMC41LDAuNi0xLjEsMS0xLjcsMS42CgkJYzEzLjUsMTEuOCwzMy44LDExLjEsNDYuNS0xLjZsMzkuNy0zOS43QzE5NS43LDg0LjYsMTk1LjYsNjMsMTgyLjQsNDkuN3oiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02OC44LDYzLjhsMjcuNC0yNy40TDgzLjksMjRjLTAuNi0wLjYtMS4yLTEuMS0xLjktMS41TDU0LjgsNDkuN2MtMTMuMywxMy4zLTEzLjMsMzQuOSwwLDQ4LjJMODIsMTI1LjEKCQljMC43LTAuNCwxLjMtMC45LDEuOS0xLjVsMTIuMy0xMi40TDY4LjgsODMuOEM2My4zLDc4LjMsNjMuMyw2OS4zLDY4LjgsNjMuOHoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik04MiwyMi41YzAuNywwLjQsMS4zLDAuOSwxLjgsMS41bDEyLjQsMTIuNEwxMDguNiwyNGMwLjUtMC42LDEuMS0xLjEsMS44LTEuNUw5Ny45LDkuOWwtMS43LTEuNWwtMS43LDEuNQoJCUw4MiwyMi41eiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTExMC40LDEyNS4xYy0wLjYtMC40LTEuMi0wLjktMS44LTEuNWwtMTIuNC0xMi40bC0xMi40LDEyLjRjLTAuNSwwLjYtMS4xLDEuMS0xLjgsMS41bDEyLjUsMTIuNQoJCWMwLjUsMC42LDEuMSwxLDEuNywxLjZjMC42LTAuNSwxLjItMSwxLjctMS42TDExMC40LDEyNS4xeiIvPgo8L2c+Cjwvc3ZnPgo=');
-    }
-    .main-content {
-        @include container-fixed;
-        @include main-container();
-        padding-left: 0;
-        padding-right: 0;
-        margin-bottom: 20px;
-        @media (min-width: $screen-sm-min) {
-            width: $container-sm;
-        }
-        @media (min-width: $screen-md-min) {
-            width: $container-md;
-        }
-        @media (min-width: $screen-lg-min) {
-            width: $container-lg;
-        }
-    }
+body > .body {
+    min-height: inherit;
+}
 
+.navbar-brand .logo {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImxvZ28tbGF5ZXJzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiCgkgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTkyLjggMTQ3LjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5Mi44IDE0Ny42OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzAwQTZCNTt9Cgkuc3Qxe2ZpbGw6IzAwNjg3Rjt9Cjwvc3R5bGU+Cjx0aXRsZT5wbWdfbG9nbzwvdGl0bGU+CjxnIGlkPSJzaGFwZXMiPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTgyLDEyNS4xYy01LjYsNC0xMy4zLDMuNC0xOC4yLTEuNUwyNCw4My44Yy01LjUtNS41LTUuNS0xNC41LDAtMjBMNjMuOCwyNGM0LjktNC45LDEyLjYtNS41LDE4LjItMS41CgkJTDk0LjUsMTBjMC41LTAuNiwxLjEtMSwxLjctMS42QzgyLjctMy40LDYyLjQtMi43LDQ5LjcsMTBMMTAsNDkuN0MtMy4zLDYzLTMuMyw4NC42LDEwLDk3LjlsMzkuNywzOS43YzEyLjcsMTIuNywzMywxMy40LDQ2LjUsMS42CgkJYy0wLjYtMC41LTEuMi0xLTEuNy0xLjZMODIsMTI1LjF6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTYuMiwzNi40bDI3LjQsMjcuM2M1LjUsNS42LDUuNSwxNC41LDAsMjAuMWwtMjcuNCwyNy40bDEyLjQsMTIuNGMwLjYsMC42LDEuMiwxLjEsMS44LDEuNWwyNy4zLTI3LjIKCQljMTMuMi0xMy40LDEzLjItMzQuOCwwLTQ4LjJsLTI3LjMtMjcuMmMtMC43LDAuNC0xLjMsMC45LTEuOCwxLjVMOTYuMiwzNi40eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE4Mi40LDQ5LjdMMTQyLjcsMTBDMTMwLTIuNywxMDkuNy0zLjQsOTYuMiw4LjRjMC42LDAuNSwxLjIsMSwxLjcsMS42bDEyLjUsMTIuNWM1LjYtNCwxMy4zLTMuNCwxOC4yLDEuNQoJCWwzOS44LDM5LjhjNS41LDUuNSw1LjUsMTQuNSwwLDIwbC0zOS44LDM5LjhjLTQuOSw0LjktMTIuNiw1LjUtMTguMiwxLjVsLTEyLjUsMTIuNWMtMC41LDAuNi0xLjEsMS0xLjcsMS42CgkJYzEzLjUsMTEuOCwzMy44LDExLjEsNDYuNS0xLjZsMzkuNy0zOS43QzE5NS43LDg0LjYsMTk1LjYsNjMsMTgyLjQsNDkuN3oiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02OC44LDYzLjhsMjcuNC0yNy40TDgzLjksMjRjLTAuNi0wLjYtMS4yLTEuMS0xLjktMS41TDU0LjgsNDkuN2MtMTMuMywxMy4zLTEzLjMsMzQuOSwwLDQ4LjJMODIsMTI1LjEKCQljMC43LTAuNCwxLjMtMC45LDEuOS0xLjVsMTIuMy0xMi40TDY4LjgsODMuOEM2My4zLDc4LjMsNjMuMyw2OS4zLDY4LjgsNjMuOHoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik04MiwyMi41YzAuNywwLjQsMS4zLDAuOSwxLjgsMS41bDEyLjQsMTIuNEwxMDguNiwyNGMwLjUtMC42LDEuMS0xLjEsMS44LTEuNUw5Ny45LDkuOWwtMS43LTEuNWwtMS43LDEuNQoJCUw4MiwyMi41eiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTExMC40LDEyNS4xYy0wLjYtMC40LTEuMi0wLjktMS44LTEuNWwtMTIuNC0xMi40bC0xMi40LDEyLjRjLTAuNSwwLjYtMS4xLDEuMS0xLjgsMS41bDEyLjUsMTIuNQoJCWMwLjUsMC42LDEuMSwxLDEuNywxLjZjMC42LTAuNSwxLjItMSwxLjctMS42TDExMC40LDEyNS4xeiIvPgo8L2c+Cjwvc3ZnPgo=');
+}
+
+.main-content {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.ant-layout-content .container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 html, body {
@@ -78,8 +70,6 @@ body {
     }
 }
 
-@include topbar-not-side-nav;
-
 ::selection {
     background: lighten($brand-info, 45%);
 }
@@ -97,8 +87,7 @@ footer[role="main"],
 .copyright {
     color: $gray;
     text-transform: uppercase;
-    text-align: center;
-    padding: 20px 15px 30px;
+    padding: 20px 0 30px;
 }
 
 h1.inline-button {
