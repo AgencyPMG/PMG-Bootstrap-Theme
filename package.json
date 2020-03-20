@@ -21,10 +21,10 @@
     "Theme"
   ],
   "peerDependencies": {
-    "bootstrap-sass": "~3.3"
+    "bootstrap-sass": "^3.4"
   },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.4",
     "css-loader": "^0.28.11",
     "node-sass": "^4.8.3",
     "resolve-url-loader": "^2.3.0",
