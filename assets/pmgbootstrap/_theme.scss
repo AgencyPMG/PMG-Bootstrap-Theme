@@ -144,7 +144,8 @@ h1.inline-button {
         &:hover {
             border-color: $brand-primary;
             a,
-            a:hover {
+            a:hover,
+            a:focus {
                 border: none;
             }
         }
