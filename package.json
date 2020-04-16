@@ -1,6 +1,6 @@
 {
   "name": "@agencypmg/bootstrap-theme",
-  "version": "5.1.2",
+  "version": "5.1.3",
   "description": "PMGs bootstrap theme",
   "license": "MIT",
   "main": "index.js",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "bootstrap-sass": "^3.4",
     "css-loader": "^0.28.11",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.13.1",
     "resolve-url-loader": "^2.3.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.7"
