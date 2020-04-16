@@ -27,6 +27,7 @@ table,
     td:first-child,
     th:first-child {
         border-left: none;
+        padding-left: 2em;
     }
 
   &.center-first-col {
